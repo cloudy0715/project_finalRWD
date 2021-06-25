@@ -1,0 +1,353 @@
+.feature {
+    background-color: #EfE9E7;
+    color: #3D1101;
+    padding-bottom: 40px;
+}
+
+.feature h2::before {
+    content: "";
+    width: 120px;
+    height: 1px;
+    background: #979797;
+    position: absolute;
+    top: 40%;
+    left: 25%;
+}
+
+.feature h2::after {
+    content: "";
+    width: 120px;
+    height: 1px;
+    background: #979797;
+    position: absolute;
+    top: 40%;
+    right: 25%;
+}
+
+@media (max-width: 768px) {
+    .feature h2::before {
+        left: 15%;
+    }
+    .feature h2::after {
+        right: 15%;
+    }
+}
+
+@media (max-width: 560px) {
+    .feature h2::before,
+    .feature h2::after {
+        height: 0;
+    }
+}
+
+.feature h2 {
+    text-align: center;
+    font-size: 20px;
+    margin: 40px 0px;
+    position: relative;
+    font-weight: 600;
+}
+
+.feature ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.feature ul li {
+    width: 30%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0px 10px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+@media (max-width: 560px) {
+    .feature ul li {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+.feature ul img {
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.feature ul h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.mainChef {
+    background-color: #3D1101;
+    color: white;
+}
+
+.mainChef .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 0px;
+}
+
+@media (max-width: 560px) {
+    .mainChef .container {
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+}
+
+.mainChef img {
+    width: 50%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+@media (max-width: 560px) {
+    .mainChef img {
+        width: 100%;
+        margin-top: 25px;
+    }
+}
+
+.mainChef .chefInfo {
+    width: 50%;
+    padding: 50px 25px;
+}
+
+@media (max-width: 560px) {
+    .mainChef .chefInfo {
+        width: 100%;
+        padding: 25px 10px;
+    }
+}
+
+.mainChef .chefInfo h2 {
+    font-size: 20px;
+}
+
+.mainChef .chefInfo h2 span {
+    font-size: 16px;
+    display: block;
+    margin-bottom: 16px;
+}
+
+.avatar {
+    background-color: #EfE9E7;
+    color: #3D1101;
+}
+
+.avatar .container {
+    padding: 40px 5px;
+}
+
+.avatar h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.avatar img {
+    border-radius: 50%;
+    margin-right: 12px;
+}
+
+.avatar ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.avatar ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: start;
+    width: 33%;
+}
+
+@media (max-width: 780px) {
+    .avatar .container {
+        padding: 40px 10px;
+    }
+}
+
+@media (max-width: 560px) {
+    .avatar ul li {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .avatar .container {
+        padding: 40px 5px;
+    }
+}
+
+.avatar ul h3 {
+    font-size: 18px;
+    padding: 20px 0;
+    font-weight: 600;
+}
+
+.avatar ul p {
+    font-size: 16px;
+}
+
+.avatar ul span {
+    display: block;
+    text-align: end;
+    position: relative;
+}
+
+.reserve {
+    color: rgba(250, 250, 250, 0.70);
+}
+
+.reserve .container {
+    padding: 40px 5px;
+}
+
+.reserve .reserveContent {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 560px) {
+    .reserve .reserveContent {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+}
+
+.reserve h2 {
+    font-size: 24px;
+    margin-bottom: 35px;
+    font-weight: 600;
+    text-align: center;
+    color: #3D1101;
+}
+
+.reserve img {
+    width: 50%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+@media (max-width: 560px) {
+    .reserve img {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+
+.reserve form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: stretch;
+    -ms-flex-pack: stretch;
+    justify-content: stretch;
+    width: 45%;
+}
+
+@media (max-width: 780px) {
+    .reserve .container {
+        padding: 40px 10px;
+    }
+}
+
+@media (max-width: 560px) {
+    .reserve form {
+        width: 100%;
+    }
+    .reserve .container {
+        padding: 40px 5px;
+    }
+}
+
+.reserve label {
+    font-weight: 600;
+    color: #3D1101;
+    margin-bottom: 9px;
+}
+
+.reserve input {
+    padding: 5px;
+    margin-bottom: 12px;
+}
+
+.reserve .checkbox {
+    margin-bottom: 30px;
+    margin-right: 15px;
+}
+
+.reserve .checkbox input {
+    margin-right: 30px;
+}
+
+.reserve .button {
+    text-align: end;
+}
+
+.reserve .button button {
+    width: 15%;
+    border-radius: 3px;
+    padding: 6px 10px;
+    border-style: none;
+    color: white;
+}
+
+.reserve .button button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.reserve .button .cancel {
+    background: rgba(0, 0, 0, 0.35);
+}
+
+.reserve .button .submit {
+    background: #F56C23;
+}

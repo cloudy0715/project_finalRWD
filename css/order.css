@@ -1,0 +1,346 @@
+.order {
+    background: #EfE9E7;
+    padding-top: 46px;
+}
+
+.sort {
+    width: 20%;
+    float: left;
+    color: #3D1101;
+    padding-top: 5px;
+}
+
+.content {
+    /* background: rgb(152, 152, 235); */
+    margin-left: 220px;
+}
+
+.sort h2 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.sort i {
+    margin-right: 10px;
+}
+
+.order .sort a {
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    font-weight: 600;
+    color: #3D1101;
+    border-bottom: 1px solid #3D1101;
+    text-decoration: none;
+}
+
+.order .sort a:hover {
+    background: #3D1101;
+    color: white;
+}
+
+.order .sort .active {
+    background: #3D1101;
+    color: white;
+}
+
+@media (max-width:768px) {
+    .sort {
+        float: none;
+        width: 100%;
+    }
+}
+
+@media (max-width:768px) {
+    .content {
+        margin-left: 0px;
+    }
+}
+
+.order .menu-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 26px;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+@media (max-width: 560px) {
+    .order .container {
+        padding: 0;
+    }
+    .content {
+        padding: 23px 0px;
+    }
+    .order .menu-header {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+}
+
+.order .search {
+    width: 75%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+@media (max-width: 560px) {
+    .order .search {
+        width: 100%;
+        margin-bottom: 24px;
+    }
+}
+
+.order .search input {
+    width: 90%;
+    border: 3px solid #3D1101;
+    background: transparent;
+    padding: 2px;
+    margin-right: -2px;
+}
+
+.order .search .fa-search {
+    background-color: #3D1101;
+    color: white;
+    padding: 8px;
+}
+
+.order .search .fa-search:hover {
+    cursor: pointer;
+    background-color: #FF5E45;
+}
+
+.order .cart {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+@media (max-width: 560px) {
+    .order .cart {
+        width: 100%;
+        -webkit-box-pack: end;
+        -ms-flex-pack: end;
+        justify-content: flex-end;
+    }
+}
+
+.order .cart a,
+.order .cart .fa-shopping-cart {
+    color: #3D1101;
+    padding: 0px 10px;
+}
+
+.order .cart a:hover,
+.order .cart .fa-shopping-cart:hover {
+    color: #FF5E45;
+    cursor: pointer;
+}
+
+.order .cart a {
+    position: relative;
+    text-decoration: none;
+    font-weight: 600;
+    padding-right: 20px;
+}
+
+.order .cart a::after {
+    content: "";
+    width: 2px;
+    height: 20px;
+    background: #3D1101;
+    position: absolute;
+    top: 2px;
+    right: 5px;
+}
+
+.order .cart .fa-shopping-cart {
+    position: relative;
+    font-size: 28px;
+}
+
+.order .cart span {
+    position: absolute;
+    top: -10px;
+    right: 3px;
+    font-size: 10px;
+    color: white;
+    background-color: #FF5E45;
+    border: 2px solid #EfE9E7;
+    border-radius: 10px;
+    padding: 1px 7px;
+}
+
+.order .productList {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.order .productList li .fa-heart {
+    position: absolute;
+    top: 9px;
+    left: 9px;
+    color: white;
+}
+
+.order .productList li .heart i {
+    color: red;
+}
+
+.order .productList li .heart i {
+    animation: heart 0.7s linear;
+}
+
+@keyframes heart {
+    0% {
+        transform: rotate(0deg) scale(1.5);
+    }
+    40% {
+        transform: rotate(0deg) scale(1);
+    }
+    41% {
+        transform: rotate(360deg) scale(1);
+    }
+    100% {
+        transform: rotate(0deg) scale(1);
+    }
+}
+
+.order .productList li .fa-heart:hover {
+    color: red;
+    cursor: pointer;
+}
+
+.order .productList .bestseller {
+    width: 90px;
+    height: 90px;
+    overflow: hidden;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+}
+
+.order .productList .bestseller .bsetsellerText {
+    position: relative;
+    background-color: #0c9;
+    color: white;
+    top: 22px;
+    right: 10px;
+    width: 138px;
+    padding: 2px;
+    -webkit-transform: rotate(-315deg);
+    transform: rotate(-315deg);
+    -webkit-box-shadow: 0 4px 6px gray;
+    box-shadow: 0 4px 6px gray;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.productList img {
+    width: 100%;
+}
+
+.order .productList li {
+    text-align: center;
+    width: 30%;
+    -webkit-box-shadow: 1px 1px 10px gray;
+    box-shadow: 1px 1px 10px gray;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+@media (max-width: 768px) {
+    .order .productList li {
+        width: 46%;
+    }
+}
+
+@media (max-width: 560px) {
+    .order .productList li {
+        width: 100%;
+    }
+    .order .productList li i {
+        font-size: 20px;
+    }
+    .order .productList li .fa-heart {
+        top: 12px;
+        left: 12px;
+    }
+}
+
+.order .productList h3 {
+    font-size: 20px;
+    color: #3D1101;
+    font-weight: bold;
+    margin-top: 11px;
+}
+
+.order .productList hr {
+    width: 50%;
+    height: 1px;
+    border-style: none;
+    text-align: center;
+    background-color: #3D1101;
+    margin-bottom: 20px;
+}
+
+.order .productList h3 span {
+    display: block;
+    font-size: 12px;
+    color: #3D1101;
+}
+
+.order .productList span {
+    font-size: 20px;
+    color: #3D1101;
+    font-weight: bold;
+}
+
+.order .productList button {
+    margin: 0 auto;
+    display: block;
+    width: 90%;
+    color: #FF5E45;
+    background: rgba(0, 0, 0, 0);
+    border: 1px solid #FF5E45;
+    margin-bottom: 10px;
+    margin-top: 13px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.order .productList button:hover {
+    color: white;
+    background-color: #FF5E45;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.order .productList button i {
+    margin-right: 10px;
+}
+
+@media (max-width: 560px) {
+    .order .productList button {
+        padding: 2px;
+    }
+}

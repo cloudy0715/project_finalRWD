@@ -1,0 +1,139 @@
+.header .container {
+    padding: 2px 10px;
+}
+
+.login {
+    background-color: #EfE9E7;
+    color: #3D1101;
+    padding: 50px 0px;
+}
+
+.login img {
+    display: block;
+    margin: auto;
+    margin-bottom: 5px;
+}
+
+.login h2 {
+    font-size: 48px;
+    font-weight: bolder;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+.login .container h3 {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 35px;
+    font-weight: 600;
+}
+
+.login .form-login {
+    margin: 0 auto;
+    width: 350px;
+    background: #EfE9E7;
+    padding: 25px;
+    -webkit-box-shadow: 3px 3px 4px 0px rgba(0, 0, 0, 0.16);
+    box-shadow: 3px 3px 4px 0px rgba(0, 0, 0, 0.16);
+    border-top: 3px solid #FF5E45;
+}
+
+.login .form-login h2 {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.login .form-login label {
+    margin-top: 15px;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.login .form-login i {
+    position: absolute;
+    left: 10px;
+    top: 33px;
+    color: rgba(61, 17, 0, 0.50);
+}
+
+.login .form-login input {
+    width: 100%;
+    padding: 10px;
+    padding-left: 30px;
+    text-indent: 25px;
+}
+
+.login .form-login .pure-form input[type="email"]:focus,
+.login .form-login .pure-form input[type="password"]:focus {
+    border-color: #FF5E45;
+}
+
+.login .form-login a {
+    color: #FF5E45;
+    display: block;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.login .form-login a:hover {
+    color: rgb(160, 58, 42);
+}
+
+.login .form-login .btn {
+    margin-top: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    text-align: center;
+    border-radius: 3px;
+    padding: 6px 0;
+    font-size: 14px;
+}
+
+.login .form-login .btn a {
+    color: white;
+    font-size: 14px;
+}
+
+.login .form-login .btn .pure-button-Reg {
+    background: rgba(0, 0, 0, 0.35);
+    width: 47%;
+}
+
+.login .form-login .btn .pure-button-Reg:hover,
+.login .form-login .btn .pure-button-Log:hover {
+    opacity: 0.8;
+}
+
+.login .form-login .btn .pure-button-Log {
+    background: #FF5E45;
+    color: white;
+    width: 47%;
+}
+
+@media (max-width: 768px) {
+    .login .form-login {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 560px) {
+    .container {
+        padding: 2px 10px;
+    }
+    .login .form-login {
+        max-width: 100%;
+    }
+    .login .form-login .btn,
+    .login .form-login .btn a {
+        font-size: 16px;
+    }
+    .login .form-login .btn .pure-button-Log {
+        margin: 0;
+    }
+}
